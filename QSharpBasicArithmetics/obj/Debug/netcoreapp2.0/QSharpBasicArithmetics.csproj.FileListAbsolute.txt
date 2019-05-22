@@ -1,0 +1,11 @@
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.csprojAssemblyReference.cache
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.csproj.CoreCompileInputs.cache
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.AssemblyInfoInputs.cache
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.AssemblyInfo.cs
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.deps.json
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.runtimeconfig.json
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.runtimeconfig.dev.json
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.dll
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.pdb
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.dll
+C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.pdb
