@@ -128,22 +128,14 @@
     //
     // Implement : |x⟩ -> |x + b mod N⟩ for some integer b
     //
-    operation QuantumAddByNumber (x : Qubit[], b : Int) : Unit is Ctl {
+    operation QuantumAddByNumber (x : Qubit[], b : Int) : Unit is Adj + Ctl {
         let n = Length(x);
-
-        // create bool array from integer b (ex: 3 -> [F, T, T])
-        mutable array2 = new Bool[n];
-        mutable tempInt2 = b;
-        for (idxBit in 0 .. n - 1) {
-            set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
-            set tempInt2 = tempInt2 / 2;
-        }
 
         // apply Draper adder for numeric
         QFTImpl(x);
         for (i in 0 .. n - 1) {
             for (j in 0 .. (n - 1) - i) {
-                if(array2[i + j]) {
+				if(not((b / 2^((n - 1) - (i + j))) % 2 == 0)) {
                     R1Frac(2, j + 1, (x)[(n - 1) - i]);
                 }
             }
@@ -334,7 +326,14 @@
         //        Controlled R1Frac([x[i + j]], (2, j + 1, (y)[(n - 1) - i]));
         //    }
         //}
+
         //Adjoint QFTImpl(y);
+		//using(ancilla = Qubit[0]) {
+			// |x⟩ |y⟩ -> |x⟩ |x + y⟩
+			//QuantumAdd(x, y);
+			// |x⟩ |y⟩ -> |x⟩ |y - N⟩
+			//Adjoint QuantumAddByNumber();
+		//}
 	//}
 	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
