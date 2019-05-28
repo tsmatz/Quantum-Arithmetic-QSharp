@@ -8,7 +8,7 @@
     // Implement : |x⟩ |y⟩ -> |x⟩ |x + y mod N⟩ where N = 2^Length(x) = 2^Length(y)
     // with Drapper algorithm (See https://arxiv.org/pdf/1411.5949.pdf)
     //
-    operation ModularAdd (x : Qubit[], y : Qubit[]) : Unit is Adj + Ctl {
+    operation QuantumAdd (x : Qubit[], y : Qubit[]) : Unit is Adj + Ctl {
         let n = Length(x);
         QFTImpl(y);
         for (i in 0 .. n - 1) {
@@ -19,7 +19,7 @@
         Adjoint QFTImpl(y);
     }
 
-    operation TestModularAdd (a : Int, b : Int, n : Int) : Int {
+    operation TestQuantumAdd (a : Int, b : Int, n : Int) : Int {
         mutable resultArray = new Result[n];
 
         using((x, y) = (Qubit[n], Qubit[n])) {
@@ -50,7 +50,7 @@
             }
 
             // apply Drapper adder
-            ModularAdd(x, y);
+            QuantumAdd(x, y);
 
             // measure and reset
             for (idx in 0 .. n - 1) {
@@ -72,7 +72,7 @@
         return resultInt;
     }
 
-    operation TestModularSub (a : Int, b : Int, n : Int) : Int {
+    operation TestQuantumSub (a : Int, b : Int, n : Int) : Int {
         mutable resultArray = new Result[n];
 
         using((x, y) = (Qubit[n], Qubit[n])) {
@@ -103,7 +103,7 @@
             }
 
             // apply Drapper adder
-            Adjoint ModularAdd(x, y);
+            Adjoint QuantumAdd(x, y);
 
             // measure and reset
             for (idx in 0 .. n - 1) {
@@ -128,7 +128,7 @@
     //
     // Implement : |x⟩ -> |x + b mod N⟩ for some integer b
     //
-    operation ModularAddByNumber (x : Qubit[], b : Int) : Unit is Ctl {
+    operation QuantumAddByNumber (x : Qubit[], b : Int) : Unit is Ctl {
         let n = Length(x);
 
         // create bool array from integer b (ex: 3 -> [F, T, T])
@@ -151,7 +151,7 @@
         Adjoint QFTImpl(x);
     }
 
-    operation TestModularAddByNumber (a : Int, b : Int, n : Int) : Int {
+    operation TestQuantumAddByNumber (a : Int, b : Int, n : Int) : Int {
         mutable resultArray = new Result[n];
 
         using(x = Qubit[n]) {
@@ -169,7 +169,7 @@
             }
 
             // apply Draper adder for numeric
-            ModularAddByNumber(x, b);
+            QuantumAddByNumber(x, b);
 
             // measure and reset
             for (idx in 0 .. n - 1) {
@@ -195,7 +195,7 @@
     // Integer "a" and modulus must be co-prime number.
     // (For making this operator must be controlled. Otherwise InverseModI() raises an error.)
     //
-    operation ModularMultiply (a : Int, y : Qubit[]) : Unit is Adj + Ctl {
+    operation QuantumMultiply (a : Int, y : Qubit[]) : Unit is Adj + Ctl {
         let n = Length(y);
         let a_mod = a % (2^n);
 
@@ -204,7 +204,7 @@
 
             // apply adder by repeating "a" (integer) times
             for(r in 0 .. a_mod - 1) {
-                ModularAdd(y, s);
+                QuantumAdd(y, s);
             }
             // now |y⟩ |a y mod N⟩
 
@@ -216,12 +216,12 @@
             // but it's tricky because we cannot use "Reset()" since here is controlled operator.
             let a_inv = InverseModI(a_mod, 2^n);
             for(r in 0 .. a_inv - 1) {
-                Adjoint ModularAdd(y, s);
+                Adjoint QuantumAdd(y, s);
             }
         }
     }
 
-    operation TestModularMultiply (a : Int, b : Int, n : Int) : Int {
+    operation TestQuantumMultiply (a : Int, b : Int, n : Int) : Int {
         mutable resultArray = new Result[n];
 
         using(y = Qubit[n]) {
@@ -239,7 +239,7 @@
             }
 
             // apply multiplier
-            ModularMultiply(a, y);
+            QuantumMultiply(a, y);
 
             // measure and reset
             for (idx in 0 .. n - 1) {
@@ -263,9 +263,9 @@
     //
     // Important Note :
     // Integer "a" and modulus must be co-prime number.
-    // (Because this invokes ModularMultiply().)
+    // (Because this invokes QuantumMultiply().)
     //
-    operation ModularExponent (a : Int, x : Qubit[]) : Unit {
+    operation QuantumExponent (a : Int, x : Qubit[]) : Unit {
         let n = Length(x);
         using (s = Qubit[n]) {
             // set |s⟩ = |1⟩
@@ -273,7 +273,7 @@
 
             // apply decomposition elements
             for(idx in 0 .. n - 1) {
-                Controlled ModularMultiply([x[idx]], (a^(2^((n-1) - idx)), s));
+                Controlled QuantumMultiply([x[idx]], (a^(2^((n-1) - idx)), s));
             }
 
             // swap |x⟩ and |s⟩
@@ -286,7 +286,7 @@
         }
     }
 
-    operation TestModularExponent (a : Int, b : Int, n : Int) : Int {
+    operation TestQuantumExponent (a : Int, b : Int, n : Int) : Int {
         mutable resultArray = new Result[n];
 
         using(x = Qubit[n]) {
@@ -304,7 +304,7 @@
             }
 
             // apply multiplier
-            ModularExponent(a, x);
+            QuantumExponent(a, x);
 
             // measure and reset
             for (idx in 0 .. n - 1) {
@@ -322,6 +322,23 @@
         }
         return resultInt;
     }
+
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    //operation QuantumAddByModulus (N : Int, x : Qubit[], y : Qubit[]) : Unit is Adj + Ctl {
+        //let n = Length(x);
+        //QFTImpl(y);
+        //for (i in 0 .. n - 1) {
+        //    for (j in 0 .. (n - 1) - i) {
+        //        Controlled R1Frac([x[i + j]], (2, j + 1, (y)[(n - 1) - i]));
+        //    }
+        //}
+        //Adjoint QFTImpl(y);
+	//}
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
     //
     // Implement QFT (Quantum Fourier Transform)
