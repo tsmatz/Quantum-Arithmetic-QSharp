@@ -989,11 +989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Demo\\QSharpBasicArithmetics\\QSharpBasicArithmetics\\QSharpBasicArithmetics.csproj",
+      "projectUniqueName": "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\QSharpBasicArithmetics.csproj",
       "projectName": "QSharpBasicArithmetics",
-      "projectPath": "C:\\Demo\\QSharpBasicArithmetics\\QSharpBasicArithmetics\\QSharpBasicArithmetics.csproj",
+      "projectPath": "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\QSharpBasicArithmetics.csproj",
       "packagesPath": "C:\\Users\\tsmatsuz\\.nuget\\packages\\",
-      "outputPath": "C:\\Demo\\QSharpBasicArithmetics\\QSharpBasicArithmetics\\obj\\",
+      "outputPath": "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

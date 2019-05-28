@@ -5,45 +5,45 @@
     open Microsoft.Quantum.Measurement;
 
     //
-    // Implement : |x⟩ |y⟩ -> |x⟩ |x + y mod N⟩ where N = Length(x) = Length(y)
+    // Implement : |x⟩ |y⟩ -> |x⟩ |x + y mod N⟩ where N = 2^Length(x) = 2^Length(y)
     // with Drapper algorithm (See https://arxiv.org/pdf/1411.5949.pdf)
     //
     operation ModularAdd (x : Qubit[], y : Qubit[]) : Unit is Adj + Ctl {
-        let N = Length(x);
+        let n = Length(x);
         QFTImpl(y);
-        for (i in 0 .. N - 1) {
-            for (j in 0 .. (N - 1) - i) {
-                Controlled R1Frac([x[i + j]], (2, j + 1, (y)[(N - 1) - i]));
+        for (i in 0 .. n - 1) {
+            for (j in 0 .. (n - 1) - i) {
+                Controlled R1Frac([x[i + j]], (2, j + 1, (y)[(n - 1) - i]));
             }
         }
         Adjoint QFTImpl(y);
     }
 
-    operation TestModularAdd (a : Int, b : Int, N : Int) : Int {
-        mutable resultArray = new Result[N];
+    operation TestModularAdd (a : Int, b : Int, n : Int) : Int {
+        mutable resultArray = new Result[n];
 
-        using((x, y) = (Qubit[N], Qubit[N])) {
+        using((x, y) = (Qubit[n], Qubit[n])) {
             // create qubit's array from integer a (ex: 3 -> |011⟩)
-            mutable array1 = new Bool[N];
+            mutable array1 = new Bool[n];
             mutable tempInt1 = a;
-            for (idxBit in 0 .. N - 1) {
-                set array1 w/= ((N - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array1 w/= ((n - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
                 set tempInt1 = tempInt1 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array1[idx]) {
                     X(x[idx]);
                 }
             }
 
             // create qubit's array from integer b (ex: 3 -> |011⟩)
-            mutable array2 = new Bool[N];
+            mutable array2 = new Bool[n];
             mutable tempInt2 = b;
-            for (idxBit in 0 .. N - 1) {
-                set array2 w/= ((N - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
                 set tempInt2 = tempInt2 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array2[idx]) {
                     X(y[idx]);
                 }
@@ -53,10 +53,10 @@
             ModularAdd(x, y);
 
             // measure and reset
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 set resultArray w/= idx <- MResetZ(y[idx]);
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 Reset(x[idx]);
             }
         }
@@ -64,39 +64,39 @@
         // get integer's result from measured array (ex : |011⟩ -> 3)
         let resultBool = Microsoft.Quantum.Convert.ResultArrayAsBoolArray(resultArray);
         mutable resultInt = 0;
-        for (idx in 0 .. N - 1) {
+        for (idx in 0 .. n - 1) {
             if(resultBool[idx]) {
-                set resultInt = resultInt + (2 ^ ((N - 1) - idx));
+                set resultInt = resultInt + (2 ^ ((n - 1) - idx));
             }
         }
         return resultInt;
     }
 
-    operation TestModularSub (a : Int, b : Int, N : Int) : Int {
-        mutable resultArray = new Result[N];
+    operation TestModularSub (a : Int, b : Int, n : Int) : Int {
+        mutable resultArray = new Result[n];
 
-        using((x, y) = (Qubit[N], Qubit[N])) {
+        using((x, y) = (Qubit[n], Qubit[n])) {
             // create qubit's array from integer a (ex: 3 -> |011⟩)
-            mutable array1 = new Bool[N];
+            mutable array1 = new Bool[n];
             mutable tempInt1 = a;
-            for (idxBit in 0 .. N - 1) {
-                set array1 w/= ((N - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array1 w/= ((n - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
                 set tempInt1 = tempInt1 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array1[idx]) {
                     X(x[idx]);
                 }
             }
 
             // create qubit's array from integer b (ex: 3 -> |011⟩)
-            mutable array2 = new Bool[N];
+            mutable array2 = new Bool[n];
             mutable tempInt2 = b;
-            for (idxBit in 0 .. N - 1) {
-                set array2 w/= ((N - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
                 set tempInt2 = tempInt2 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array2[idx]) {
                     X(y[idx]);
                 }
@@ -106,10 +106,10 @@
             Adjoint ModularAdd(x, y);
 
             // measure and reset
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 set resultArray w/= idx <- MResetZ(y[idx]);
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 Reset(x[idx]);
             }
         }
@@ -117,9 +117,9 @@
         // get integer's result from measured array (ex : |011⟩ -> 3)
         let resultBool = Microsoft.Quantum.Convert.ResultArrayAsBoolArray(resultArray);
         mutable resultInt = 0;
-        for (idx in 0 .. N - 1) {
+        for (idx in 0 .. n - 1) {
             if(resultBool[idx]) {
-                set resultInt = resultInt + (2 ^ ((N - 1) - idx));
+                set resultInt = resultInt + (2 ^ ((n - 1) - idx));
             }
         }
         return resultInt;
@@ -129,40 +129,40 @@
     // Implement : |x⟩ -> |x + b mod N⟩ for some integer b
     //
     operation ModularAddByNumber (x : Qubit[], b : Int) : Unit is Ctl {
-        let N = Length(x);
+        let n = Length(x);
 
         // create bool array from integer b (ex: 3 -> [F, T, T])
-        mutable array2 = new Bool[N];
+        mutable array2 = new Bool[n];
         mutable tempInt2 = b;
-        for (idxBit in 0 .. N - 1) {
-            set array2 w/= ((N - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
+        for (idxBit in 0 .. n - 1) {
+            set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
             set tempInt2 = tempInt2 / 2;
         }
 
         // apply Draper adder for numeric
         QFTImpl(x);
-        for (i in 0 .. N - 1) {
-            for (j in 0 .. (N - 1) - i) {
+        for (i in 0 .. n - 1) {
+            for (j in 0 .. (n - 1) - i) {
                 if(array2[i + j]) {
-                    R1Frac(2, j + 1, (x)[(N - 1) - i]);
+                    R1Frac(2, j + 1, (x)[(n - 1) - i]);
                 }
             }
         }
         Adjoint QFTImpl(x);
     }
 
-    operation TestModularAddByNumber (a : Int, b : Int, N : Int) : Int {
-        mutable resultArray = new Result[N];
+    operation TestModularAddByNumber (a : Int, b : Int, n : Int) : Int {
+        mutable resultArray = new Result[n];
 
-        using(x = Qubit[N]) {
+        using(x = Qubit[n]) {
             // create qubit's array from integer a (ex: 3 -> |011⟩)
-            mutable array1 = new Bool[N];
+            mutable array1 = new Bool[n];
             mutable tempInt1 = a;
-            for (idxBit in 0 .. N - 1) {
-                set array1 w/= ((N - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array1 w/= ((n - 1) - idxBit) <- tempInt1 % 2 == 0 ? false | true;
                 set tempInt1 = tempInt1 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array1[idx]) {
                     X(x[idx]);
                 }
@@ -172,7 +172,7 @@
             ModularAddByNumber(x, b);
 
             // measure and reset
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 set resultArray w/= idx <- MResetZ(x[idx]);
             }
         }
@@ -180,9 +180,9 @@
         // get integer's result from measured array (ex : |011⟩ -> 3)
         let resultBool = Microsoft.Quantum.Convert.ResultArrayAsBoolArray(resultArray);
         mutable resultInt = 0;
-        for (idx in 0 .. N - 1) {
+        for (idx in 0 .. n - 1) {
             if(resultBool[idx]) {
-                set resultInt = resultInt + (2 ^ ((N - 1) - idx));
+                set resultInt = resultInt + (2 ^ ((n - 1) - idx));
             }
         }
         return resultInt;
@@ -196,12 +196,14 @@
     // (For making this operator must be controlled. Otherwise InverseModI() raises an error.)
     //
     operation ModularMultiply (a : Int, y : Qubit[]) : Unit is Adj + Ctl {
-        let N = Length(y);
-        using (s = Qubit[N]) {
+        let n = Length(y);
+        let a_mod = a % (2^n);
+
+        using (s = Qubit[n]) {
             // start |y⟩ |0⟩
 
             // apply adder by repeating "a" (integer) times
-            for(r in 0 .. a - 1) {
+            for(r in 0 .. a_mod - 1) {
                 ModularAdd(y, s);
             }
             // now |y⟩ |a y mod N⟩
@@ -212,25 +214,25 @@
 
             // reset all s qubits !
             // but it's tricky because we cannot use "Reset()" since here is controlled operator.
-            let inv_a = InverseModI(a, 2^N);
-            for(r in 0 .. inv_a - 1) {
+            let a_inv = InverseModI(a_mod, 2^n);
+            for(r in 0 .. a_inv - 1) {
                 Adjoint ModularAdd(y, s);
             }
         }
     }
 
-    operation TestModularMultiply (a : Int, b : Int, N : Int) : Int {
-        mutable resultArray = new Result[N];
+    operation TestModularMultiply (a : Int, b : Int, n : Int) : Int {
+        mutable resultArray = new Result[n];
 
-        using(y = Qubit[N]) {
+        using(y = Qubit[n]) {
             // create qubit's array from integer b (ex: 3 -> |011⟩)
-            mutable array2 = new Bool[N];
+            mutable array2 = new Bool[n];
             mutable tempInt2 = b;
-            for (idxBit in 0 .. N - 1) {
-                set array2 w/= ((N - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
                 set tempInt2 = tempInt2 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array2[idx]) {
                     X(y[idx]);
                 }
@@ -240,7 +242,7 @@
             ModularMultiply(a, y);
 
             // measure and reset
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 set resultArray w/= idx <- MResetZ(y[idx]);
             }
         }
@@ -248,9 +250,9 @@
         // get integer's result from measured array (ex : |011⟩ -> 3)
         let resultBool = Microsoft.Quantum.Convert.ResultArrayAsBoolArray(resultArray);
         mutable resultInt = 0;
-        for (idx in 0 .. N - 1) {
+        for (idx in 0 .. n - 1) {
             if(resultBool[idx]) {
-                set resultInt = resultInt + (2 ^ ((N - 1) - idx));
+                set resultInt = resultInt + (2 ^ ((n - 1) - idx));
             }
         }
         return resultInt;
@@ -264,39 +266,38 @@
     // (Because this invokes ModularMultiply().)
     //
     operation ModularExponent (a : Int, x : Qubit[]) : Unit {
-        let N = Length(x);
-        using (s = Qubit[N]) {
+        let n = Length(x);
+        using (s = Qubit[n]) {
             // set |s⟩ = |1⟩
-            X(s[N - 1]);
+            X(s[n - 1]);
 
             // apply decomposition elements
-            for(idx in 0 .. N - 1) {
-                //(a^(2^((N-1) - idx))
-                Controlled ModularMultiply([x[idx]], (a^(2^((N-1) - idx)), s));
+            for(idx in 0 .. n - 1) {
+                Controlled ModularMultiply([x[idx]], (a^(2^((n-1) - idx)), s));
             }
 
             // swap |x⟩ and |s⟩
             Microsoft.Quantum.Canon.ApplyToEachCA(SWAP, Microsoft.Quantum.Arrays.Zip(x, s));
 
             // Reset s
-            for(idx in 0 .. N - 1) {
+            for(idx in 0 .. n - 1) {
                 Reset(s[idx]);
             }
         }
     }
 
-    operation TestModularExponent (a : Int, b : Int, N : Int) : Int {
-        mutable resultArray = new Result[N];
+    operation TestModularExponent (a : Int, b : Int, n : Int) : Int {
+        mutable resultArray = new Result[n];
 
-        using(x = Qubit[N]) {
+        using(x = Qubit[n]) {
             // create qubit's array from integer b (ex: 3 -> |011⟩)
-            mutable array2 = new Bool[N];
+            mutable array2 = new Bool[n];
             mutable tempInt2 = b;
-            for (idxBit in 0 .. N - 1) {
-                set array2 w/= ((N - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
+            for (idxBit in 0 .. n - 1) {
+                set array2 w/= ((n - 1) - idxBit) <- tempInt2 % 2 == 0 ? false | true;
                 set tempInt2 = tempInt2 / 2;
             }
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 if(array2[idx]) {
                     X(x[idx]);
                 }
@@ -306,7 +307,7 @@
             ModularExponent(a, x);
 
             // measure and reset
-            for (idx in 0 .. N - 1) {
+            for (idx in 0 .. n - 1) {
                 set resultArray w/= idx <- MResetZ(x[idx]);
             }
         }
@@ -314,9 +315,9 @@
         // get integer's result from measured array (ex : |011⟩ -> 3)
         let resultBool = Microsoft.Quantum.Convert.ResultArrayAsBoolArray(resultArray);
         mutable resultInt = 0;
-        for (idx in 0 .. N - 1) {
+        for (idx in 0 .. n - 1) {
             if(resultBool[idx]) {
-                set resultInt = resultInt + (2 ^ ((N - 1) - idx));
+                set resultInt = resultInt + (2 ^ ((n - 1) - idx));
             }
         }
         return resultInt;

@@ -11,7 +11,7 @@ namespace Quantum.QSharpBasicArithmetics
         {
             using (var qsim = new QuantumSimulator())
             {
-                int N = 3;
+                int n = 3; // N = 2^n
 
                 // Modulus Addition
                 for (int a = 3, b = 3; a <= 7; a++)
@@ -19,16 +19,16 @@ namespace Quantum.QSharpBasicArithmetics
                     Console.WriteLine("{0} + {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularAdd.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularAdd.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
                 for (int a = 7, b = 4; b <= 7; b++)
                 {
                     Console.WriteLine("{0} + {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularAdd.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularAdd.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
 
                 // Modulus Subtraction
@@ -37,8 +37,8 @@ namespace Quantum.QSharpBasicArithmetics
                     Console.WriteLine("{0} - {1} is {2} (mod {3})",
                         b,
                         a,
-                        TestModularSub.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularSub.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
 
                 // Modulus Addition by Classical Numeric
@@ -47,16 +47,16 @@ namespace Quantum.QSharpBasicArithmetics
                     Console.WriteLine("{0} + {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularAddByNumber.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularAddByNumber.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
                 for (int a = 7, b = 4; b <= 7; b++)
                 {
                     Console.WriteLine("{0} + {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularAddByNumber.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularAddByNumber.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
 
                 // Modulus Multiplication
@@ -66,8 +66,8 @@ namespace Quantum.QSharpBasicArithmetics
                     Console.WriteLine("{0} x {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularMultiply.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularMultiply.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
 
                 // Modulus Exponential
@@ -77,8 +77,8 @@ namespace Quantum.QSharpBasicArithmetics
                     Console.WriteLine("{0} ^ {1} is {2} (mod {3})",
                         a,
                         b,
-                        TestModularExponent.Run(qsim, a, b, N).Result,
-                        Math.Pow(2, N));
+                        TestModularExponent.Run(qsim, a, b, n).Result,
+                        Math.Pow(2, n));
                 }
             }
 
