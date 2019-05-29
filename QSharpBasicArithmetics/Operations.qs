@@ -315,6 +315,7 @@
         return resultInt;
     }
 
+    //
     // Implement : |x⟩ |y⟩ -> |x⟩ |x+y mod N⟩ for arbitray integer N (< 2^n)
     // (where N < 2^n, x < N, y < N)
     //
@@ -379,7 +380,7 @@
     //
     // Important Note :
     // Integer "a" and N must be co-prime number.
-    // (Because this invokes QuantumMultiply().)
+    // (Because this invokes QuantumMultiplyByModulus().)
     //
     operation QuantumExponentByModulus (N : Int, a : Int, x : Qubit[]) : Unit {
         let n = Length(x);

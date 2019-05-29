@@ -31,25 +31,25 @@ using Microsoft.Quantum.Simulation.Core;
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumExponent\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":259,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumExponent\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":280,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumExponent\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":280,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"x\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"y\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":54},\"Item2\":{\"Line\":1,\"Column\":55}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":47}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"y\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":349,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumExponentByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":383,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":47}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"x\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumExponentByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":383,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":404,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":54},\"Item2\":{\"Line\":1,\"Column\":55}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":64}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":404,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":465,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":467,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":465,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":465,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":465,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":32},\"Item2\":{\"Line\":1,\"Column\":33}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"x\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":41},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"y\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":54},\"Item2\":{\"Line\":1,\"Column\":55}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":321,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":77},\"Item2\":{\"Line\":1,\"Column\":86}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumAddByModulus\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":350,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":47}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"y\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":350,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":350,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":350,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumMultiplyByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":350,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":78},\"Item2\":{\"Line\":1,\"Column\":87}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QuantumMultiplyByModulus\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumExponentByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":384,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":46},\"Item2\":{\"Line\":1,\"Column\":47}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"x\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":55},\"Item2\":{\"Line\":1,\"Column\":56}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QuantumExponentByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":384,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":35}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":405,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":36},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"b\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":45},\"Item2\":{\"Line\":1,\"Column\":46}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":54},\"Item2\":{\"Line\":1,\"Column\":55}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"N\"]},\"Type\":{\"Case\":\"Int\"},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":63},\"Item2\":{\"Line\":1,\"Column\":64}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"TestQuantumAddByModulus\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":405,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":466,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"IsMutable\":false,\"HasLocalQuantumDependency\":false,\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":20},\"Item2\":{\"Line\":1,\"Column\":22}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":468,\"Item2\":8},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":1},\"Item2\":{\"Line\":1,\"Column\":5}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":466,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsAdjoint specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlled\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":466,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsControlled specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsControlledAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Affiliation\":{\"Case\":\"Union\",\"Fields\":[{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Controllable\"}]}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Quantum.QSharpBasicArithmetics\",\"Name\":\"QFTImpl\"},\"SourceFile\":\"C:/Demo/Quantum-Arithmetic-QSharp/QSharpBasicArithmetics/Operations.qs\",\"Position\":{\"Item1\":466,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":53}},\"Documentation\":[\"automatically generated QsControlledAdjoint specialization for Quantum.QSharpBasicArithmetics.QFTImpl\"]}")]
 #line hidden
 namespace Quantum.QSharpBasicArithmetics
 {
@@ -1814,31 +1814,31 @@ namespace Quantum.QSharpBasicArithmetics
             var (N,x,y) = __in__;
 #line hidden
             {
-#line 322 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 323 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 var (ancilla,cx,cy) = (Allocate.Apply(), Allocate.Apply(), Allocate.Apply());
 #line hidden
                 Exception __arg1__ = null;
                 try
                 {
-#line 324 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var x_large = (IQArray<Qubit>)QArray<Qubit>.Add(new QArray<Qubit>(cx), x);
 #line 325 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                    var x_large = (IQArray<Qubit>)QArray<Qubit>.Add(new QArray<Qubit>(cx), x);
+#line 326 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     var y_large = (IQArray<Qubit>)QArray<Qubit>.Add(new QArray<Qubit>(cy), y);
-#line 327 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 328 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     QuantumAdd.Apply((x_large, y_large));
-#line 329 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 330 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     QuantumAddByNumber.Adjoint.Apply((y_large, N));
-#line 331 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 332 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(y_large[0L]), ancilla));
-#line 333 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 334 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     QuantumAddByNumber.Controlled.Apply((new QArray<Qubit>(ancilla), (y_large, N)));
-#line 335 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    QuantumAdd.Adjoint.Apply((x_large, y_large));
 #line 336 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    MicrosoftQuantumIntrinsicX.Apply(ancilla);
+                    QuantumAdd.Adjoint.Apply((x_large, y_large));
 #line 337 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(y_large[0L]), ancilla));
+                    MicrosoftQuantumIntrinsicX.Apply(ancilla);
 #line 338 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                    MicrosoftQuantumIntrinsicX.Controlled.Apply((new QArray<Qubit>(y_large[0L]), ancilla));
+#line 339 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     QuantumAdd.Apply((x_large, y_large));
                 }
 #line hidden
@@ -2140,35 +2140,35 @@ namespace Quantum.QSharpBasicArithmetics
         public override Func<(Int64,Int64,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (N,a,y) = __in__;
-#line 351 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-            var n = y.Length;
 #line 352 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+            var n = y.Length;
+#line 353 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             var a_mod = (a % N);
 #line hidden
             {
-#line 354 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 355 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 var s = Allocate.Apply(n);
 #line hidden
                 Exception __arg1__ = null;
                 try
                 {
-#line 358 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 359 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var r in new Range(0L, (a_mod - 1L)))
 #line hidden
                     {
-#line 359 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 360 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         QuantumAddByModulus.Apply((N, y, s));
                     }
 
-#line 364 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 365 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     MicrosoftQuantumCanonApplyToEachCA.Apply((MicrosoftQuantumIntrinsicSWAP, MicrosoftQuantumArraysZip.Apply<IQArray<(Qubit,Qubit)>>((y, s))));
-#line 369 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var a_inv = MicrosoftQuantumMathInverseModI.Apply((a_mod, N));
 #line 370 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                    var a_inv = MicrosoftQuantumMathInverseModI.Apply((a_mod, N));
+#line 371 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var r in new Range(0L, (a_inv - 1L)))
 #line hidden
                     {
-#line 371 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 372 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         QuantumAddByModulus.Adjoint.Apply((N, y, s));
                     }
                 }
@@ -2468,33 +2468,33 @@ namespace Quantum.QSharpBasicArithmetics
         public override Func<(Int64,Int64,IQArray<Qubit>), QVoid> Body => (__in__) =>
         {
             var (N,a,x) = __in__;
-#line 385 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 386 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             var n = x.Length;
 #line hidden
             {
-#line 386 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 387 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 var s = Allocate.Apply(n);
 #line hidden
                 Exception __arg1__ = null;
                 try
                 {
-#line 388 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 389 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     MicrosoftQuantumIntrinsicX.Apply(s[(n - 1L)]);
-#line 391 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 392 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 392 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 393 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         QuantumMultiplyByModulus.Controlled.Apply((new QArray<Qubit>(x[idx]), (N, a.Pow(2L.Pow(((n - 1L) - idx))), s)));
                     }
 
-#line 396 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 397 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     MicrosoftQuantumCanonApplyToEachCA.Apply((MicrosoftQuantumIntrinsicSWAP, MicrosoftQuantumArraysZip.Apply<IQArray<(Qubit,Qubit)>>((x, s))));
-#line 399 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 400 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 400 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 401 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         MicrosoftQuantumIntrinsicReset.Apply(s[idx]);
                     }
                 }
@@ -2605,83 +2605,83 @@ namespace Quantum.QSharpBasicArithmetics
         public override Func<(Int64,Int64,Int64,Int64), Int64> Body => (__in__) =>
         {
             var (a,b,n,N) = __in__;
-#line 406 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 407 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             var resultArray = QArray<Result>.Create(n);
 #line hidden
             {
-#line 408 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 409 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 var (x,y) = (Allocate.Apply(n), Allocate.Apply(n));
 #line hidden
                 Exception __arg1__ = null;
                 try
                 {
-#line 410 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var array1 = QArray<Boolean>.Create(n);
 #line 411 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var tempInt1 = a;
+                    var array1 = QArray<Boolean>.Create(n);
 #line 412 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                    var tempInt1 = a;
+#line 413 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idxBit in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 413 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                        array1.Modify(((n - 1L) - idxBit), (((tempInt1 % 2L) == 0L) ? false : true));
 #line 414 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                        array1.Modify(((n - 1L) - idxBit), (((tempInt1 % 2L) == 0L) ? false : true));
+#line 415 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         tempInt1 = (tempInt1 / 2L);
                     }
 
-#line 416 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 417 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 417 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 418 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         if (array1[idx])
                         {
-#line 418 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 419 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                             MicrosoftQuantumIntrinsicX.Apply(x[idx]);
                         }
                     }
 
-#line 423 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var array2 = QArray<Boolean>.Create(n);
 #line 424 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                    var tempInt2 = b;
+                    var array2 = QArray<Boolean>.Create(n);
 #line 425 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                    var tempInt2 = b;
+#line 426 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idxBit in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 426 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                        array2.Modify(((n - 1L) - idxBit), (((tempInt2 % 2L) == 0L) ? false : true));
 #line 427 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                        array2.Modify(((n - 1L) - idxBit), (((tempInt2 % 2L) == 0L) ? false : true));
+#line 428 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         tempInt2 = (tempInt2 / 2L);
                     }
 
-#line 429 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 430 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 430 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 431 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         if (array2[idx])
                         {
-#line 431 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 432 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                             MicrosoftQuantumIntrinsicX.Apply(y[idx]);
                         }
                     }
 
-#line 436 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 437 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     QuantumAddByModulus.Apply((N, x, y));
-#line 442 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 443 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 443 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 444 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         resultArray.Modify(idx, MicrosoftQuantumMeasurementMResetZ.Apply(y[idx]));
                     }
 
-#line 445 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 446 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
                     {
-#line 446 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 447 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                         MicrosoftQuantumIntrinsicReset.Apply(x[idx]);
                     }
                 }
@@ -2706,23 +2706,23 @@ namespace Quantum.QSharpBasicArithmetics
                 }
             }
 
-#line 451 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-            var resultBool = (IQArray<Boolean>)MicrosoftQuantumConvertResultArrayAsBoolArray.Apply(resultArray?.Copy());
 #line 452 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-            var resultInt = 0L;
+            var resultBool = (IQArray<Boolean>)MicrosoftQuantumConvertResultArrayAsBoolArray.Apply(resultArray?.Copy());
 #line 453 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+            var resultInt = 0L;
+#line 454 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             foreach (var idx in new Range(0L, (n - 1L)))
 #line hidden
             {
-#line 454 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 455 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 if (resultBool[idx])
                 {
-#line 455 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 456 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     resultInt = (resultInt + 2L.Pow(((n - 1L) - idx)));
                 }
             }
 
-#line 458 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 459 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             return resultInt;
         }
 
@@ -2787,24 +2787,24 @@ namespace Quantum.QSharpBasicArithmetics
         public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
         {
             var qs = __in__;
-#line 470 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 471 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             var nQubits = qs.Length;
-#line 472 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 473 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             foreach (var i in new Range(0L, (nQubits - 1L)))
 #line hidden
             {
-#line 474 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
-                MicrosoftQuantumIntrinsicH.Apply(qs[i]);
 #line 475 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+                MicrosoftQuantumIntrinsicH.Apply(qs[i]);
+#line 476 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                 foreach (var j in new Range((i + 1L), (nQubits - 1L)))
 #line hidden
                 {
-#line 477 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 478 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
                     MicrosoftQuantumIntrinsicR1Frac.Controlled.Apply((new QArray<Qubit>(qs[j]), (1L, (j - i), qs[i])));
                 }
             }
 
-#line 481 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
+#line 482 "C:\\Demo\\Quantum-Arithmetic-QSharp\\QSharpBasicArithmetics\\Operations.qs"
             MicrosoftQuantumCanonSwapReverseRegister.Apply(qs);
 #line hidden
             return QVoid.Instance;
