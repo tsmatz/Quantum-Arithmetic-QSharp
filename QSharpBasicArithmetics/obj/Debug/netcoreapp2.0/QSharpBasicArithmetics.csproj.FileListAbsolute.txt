@@ -9,7 +9,6 @@ C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QS
 C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.pdb
 C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.dll
 C:\Demo\QSharpBasicArithmetics\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.pdb
-C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.csprojAssemblyReference.cache
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.csproj.CoreCompileInputs.cache
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.AssemblyInfoInputs.cache
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.AssemblyInfo.cs
@@ -20,3 +19,4 @@ C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.runtimeconfig.dev.json
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.dll
 C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\bin\Debug\netcoreapp2.0\QSharpBasicArithmetics.pdb
+C:\Demo\Quantum-Arithmetic-QSharp\QSharpBasicArithmetics\obj\Debug\netcoreapp2.0\QSharpBasicArithmetics.csprojAssemblyReference.cache
