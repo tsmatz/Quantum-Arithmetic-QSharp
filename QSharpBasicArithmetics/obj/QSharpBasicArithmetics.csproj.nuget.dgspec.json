@@ -46,11 +46,11 @@
             },
             "Microsoft.Quantum.Development.Kit": {
               "target": "Package",
-              "version": "[0.6.1905.301, )"
+              "version": "[0.7.1905.3109, )"
             },
             "Microsoft.Quantum.Standard": {
               "target": "Package",
-              "version": "[0.6.1905.301, )"
+              "version": "[0.7.1905.3109, )"
             }
           },
           "imports": [

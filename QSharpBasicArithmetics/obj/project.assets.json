@@ -182,17 +182,17 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Quantum.Development.Kit/0.6.1905.301": {
+      "Microsoft.Quantum.Development.Kit/0.7.1905.3109": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Quantum.Simulators": "0.6.1905.301"
+          "Microsoft.Quantum.Simulators": "0.7.1905.3109"
         },
         "build": {
           "build/Microsoft.Quantum.Development.Kit.props": {},
           "build/Microsoft.Quantum.Development.Kit.targets": {}
         }
       },
-      "Microsoft.Quantum.Simulators/0.6.1905.301": {
+      "Microsoft.Quantum.Simulators/0.7.1905.3109": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -230,10 +230,10 @@
           }
         }
       },
-      "Microsoft.Quantum.Standard/0.6.1905.301": {
+      "Microsoft.Quantum.Standard/0.7.1905.3109": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Quantum.Development.Kit": "0.6.1905.301"
+          "Microsoft.Quantum.Development.Kit": "0.7.1905.3109"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Quantum.Standard.dll": {}
@@ -608,10 +608,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Quantum.Development.Kit/0.6.1905.301": {
-      "sha512": "3OvFEt0hplb4upLVYuQqRhtxB3xrbhG7dwP9qF1NFP2U2dkcnTj84BLrMB0T2TAl8FWANf97AxlkVlZ0pRRVlw==",
+    "Microsoft.Quantum.Development.Kit/0.7.1905.3109": {
+      "sha512": "U67ZXG+BeeLvcSGZvLg44oSAwT+XogBgB0VclciEkxXYIyL6wjN4VA4/CoquKafkYrGBSA7LTpni3dKzuob8bg==",
       "type": "package",
-      "path": "microsoft.quantum.development.kit/0.6.1905.301",
+      "path": "microsoft.quantum.development.kit/0.7.1905.3109",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -621,7 +621,7 @@
         "build/Microsoft.Quantum.Development.Kit.targets",
         "build/QSharp.ProjectItemsSchema.xaml",
         "build/QSharp.xaml",
-        "microsoft.quantum.development.kit.0.6.1905.301.nupkg.sha512",
+        "microsoft.quantum.development.kit.0.7.1905.3109.nupkg.sha512",
         "microsoft.quantum.development.kit.nuspec",
         "tools/qsc/CommandLine.dll",
         "tools/qsc/FParsec.dll",
@@ -781,10 +781,10 @@
         "tools/qsc/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll"
       ]
     },
-    "Microsoft.Quantum.Simulators/0.6.1905.301": {
-      "sha512": "uuE731xvDEugbw979P0nEAuUDvL1bTz3Hne0epHX6eMnRaLtSpom+ANDH+c9/SJM8DV2NyKcDmGxlPCI6IXe4g==",
+    "Microsoft.Quantum.Simulators/0.7.1905.3109": {
+      "sha512": "PXCoVlxAcXAfb6C9KqjN7YdlIV5pYMqoBRjeytPlJEq0nowobNYRAhHlb6DggJcAevp6vQ4LfkMujEM7uBpOCA==",
       "type": "package",
-      "path": "microsoft.quantum.simulators/0.6.1905.301",
+      "path": "microsoft.quantum.simulators/0.7.1905.3109",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -794,7 +794,7 @@
         "lib/netstandard2.0/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll",
         "lib/netstandard2.0/Microsoft.Quantum.Simulators.dll",
         "lib/netstandard2.0/Microsoft.Quantum.Simulators.xml",
-        "microsoft.quantum.simulators.0.6.1905.301.nupkg.sha512",
+        "microsoft.quantum.simulators.0.7.1905.3109.nupkg.sha512",
         "microsoft.quantum.simulators.nuspec",
         "runtimes/linux-x64/native/Microsoft.Quantum.Simulator.Runtime.dll",
         "runtimes/osx-x64/native/Microsoft.Quantum.Simulator.Runtime.dll",
@@ -802,15 +802,15 @@
         "runtimes/win-x64/native/vcomp140.dll"
       ]
     },
-    "Microsoft.Quantum.Standard/0.6.1905.301": {
-      "sha512": "KNa/qdZmbZfP/LljBHJgY6lbfLg7SaEJ31ng6Y23MIM3K42VAgTJRs+ypOJaPDfQgGai6gi0LOHf3cQFjR6Bgw==",
+    "Microsoft.Quantum.Standard/0.7.1905.3109": {
+      "sha512": "uZqxDDsxMDsoiP76mz7KdgOvQoKeMNhaUFzv62K3kTYXxVBVzA41FjN+/EN7P6q/Lme3neDEUAcj3pQXRHxYTg==",
       "type": "package",
-      "path": "microsoft.quantum.standard/0.6.1905.301",
+      "path": "microsoft.quantum.standard/0.7.1905.3109",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Quantum.Standard.dll",
-        "microsoft.quantum.standard.0.6.1905.301.nupkg.sha512",
+        "microsoft.quantum.standard.0.7.1905.3109.nupkg.sha512",
         "microsoft.quantum.standard.nuspec"
       ]
     },
@@ -978,8 +978,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.Quantum.Development.Kit >= 0.6.1905.301",
-      "Microsoft.Quantum.Standard >= 0.6.1905.301"
+      "Microsoft.Quantum.Development.Kit >= 0.7.1905.3109",
+      "Microsoft.Quantum.Standard >= 0.7.1905.3109"
     ]
   },
   "packageFolders": {
@@ -1028,11 +1028,11 @@
           },
           "Microsoft.Quantum.Development.Kit": {
             "target": "Package",
-            "version": "[0.6.1905.301, )"
+            "version": "[0.7.1905.3109, )"
           },
           "Microsoft.Quantum.Standard": {
             "target": "Package",
-            "version": "[0.6.1905.301, )"
+            "version": "[0.7.1905.3109, )"
           }
         },
         "imports": [
