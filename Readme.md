@@ -1,3 +1,6 @@
+**See [here](https://github.com/tsmatz/quantum-algorithms-qsharp) for examples which runs on the latest version of QDK (Quantum Development Kit).**<br>
+(This example uses QDK and standard libraries old version, v0.6.)
+
 # Q# Example for Basic Quantum Arithmetics (Adder, Substracter, Multiplier, and Exponentiation)
 
 There exist several researches to reduce qubits or improve performance for Quantum Arithmetics. (See "[Circuit for Shor's algorithm using 2n + 3 qubits](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)", "[Fast Quantum Modular Exponentiation Architecture](https://arxiv.org/pdf/1207.0511.pdf)", etc.)    
